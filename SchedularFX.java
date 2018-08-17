@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package schedularfx;
 
 import java.util.Timer;
@@ -33,9 +28,9 @@ public class SchedularFX extends Application {
                 System.out.println("Tråd startet");
                 SchedularMain scMain = new SchedularMain();
                 // Hver 24. time
-                //timer.scheduleAtFixedRate(scMain, 0, 1000*60*60*24);
-                // Hvert minutt
-                timer.scheduleAtFixedRate(scMain, 0, 1000*60);
+                timer.scheduleAtFixedRate(scMain, 0, 1000*60*60*24);
+                // Hvert minutt (for testing)
+                // timer.scheduleAtFixedRate(scMain, 0, 1000*60);
             }
         });
         
