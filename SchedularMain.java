@@ -20,7 +20,8 @@ public class SchedularMain extends TimerTask {
     @Override
     public void run() {
         current = new Date();
-        String url = "http://gakk.one/faktura.php";
+        // Sett inn URL her
+        String url = "";
         String params = "";
         executePost(url, "");
         System.out.println("Dato & klokkeslett: " + current);
